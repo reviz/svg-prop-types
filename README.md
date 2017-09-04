@@ -5,10 +5,10 @@ Custom SVG prop types for React.
 ## Usage
 ```
 import React, { Component } from 'react';
-import { circle as CirclePropType } from 'svg-prop-types';
+import circlePropType from 'svg-prop-types/shape/circle';
 
 class Circle extends Component {
-  static propTypes = CirclePropType;
+  static propTypes = circlePropType;
 
   render() {
     return (
