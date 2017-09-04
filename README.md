@@ -2,7 +2,7 @@
 
 Custom SVG prop types for React.
 
-Usage
+## Usage
 ```
 import React, { Component } from 'react';
 import { circle as CirclePropType } from 'svg-prop-types';
