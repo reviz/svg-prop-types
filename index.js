@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import CSSLength from './CSSLength';
 
 export const conditionalProcessing = {
   requiredExtensions: PropTypes.string,
@@ -118,8 +119,8 @@ export const SVG = {
   baseProfile: PropTypes.string,
   x: PropTypes.number,
   y: PropTypes.number,
-  width: PropTypes.string,
-  height: PropTypes.string,
+  width: CSSLength,
+  height: CSSLength,
   preserveAspectRatio: PropTypes.string,
   contentScriptType: PropTypes.string,
   contentStyleType: PropTypes.string,

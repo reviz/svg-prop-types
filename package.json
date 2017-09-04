@@ -1,6 +1,6 @@
 {
   "name": "svg-prop-types",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Custom SVG prop types for React.",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/larriereguichet/svg-prop-types#readme",
   "dependencies": {
+    "airbnb-prop-types": "^2.8.1",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
