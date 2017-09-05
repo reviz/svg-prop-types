@@ -3,7 +3,9 @@
 Custom SVG prop types for React.
 
 SVG content type:
-- `SVGLength`: ensure that the length is used is compatible with a SVG length (see https://developer.mozilla.org/en-US/docs/Web/SVG/Content_type#Length)
+- `SVGLength`: ensure that the length used is compatible with a SVG length
+(see https://developer.mozilla.org/en-US/docs/Web/SVG/Content_type#Length)
+
 ...
 
 SVG and HTML attributes sets:
@@ -13,12 +15,14 @@ SVG and HTML attributes sets:
 - `graphicalEvent` contains graphical events attributes
 - `documentEvent` contains document events attributes
 - `presentation` contains presentational attributes
+
 ...
 
 SVG elements:
 - `SVG`
 - `circle`
 - `line`
+
 ...
 
 ## Usage
