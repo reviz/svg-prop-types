@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import shape from '/';
+import PropTypes from "prop-types";
+import shape from "../shape";
 
 export default {
   ...shape,
