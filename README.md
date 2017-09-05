@@ -1,5 +1,7 @@
 # svg-prop-types
 
+[![Build Status][travis-svg]][travis-url]
+
 Custom SVG prop types for React.
 
 SVG content type:
@@ -54,3 +56,7 @@ Build pipeline is borrowed from https://github.com/airbnb/prop-types
 ## Tests
 
 Simply clone the repo, npm install, and run npm test
+
+[package-url]: https://npmjs.org/package/svg-prop-types
+[travis-svg]: https://travis-ci.org/larriereguichet/svg-prop-types.svg
+[travis-url]: https://travis-ci.org/larriereguichet/svg-prop-types
