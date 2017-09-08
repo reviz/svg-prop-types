@@ -17,6 +17,7 @@ function callValidator(
 describe("SVGLength", () => {
   it("returns a function", () => {
     expect(typeof SVGLength).to.equal("function");
+    expect(typeof SVGLength.isRequired).to.equal("function");
   });
 
   function assertPasses(validator, element, propName) {
@@ -30,24 +31,24 @@ describe("SVGLength", () => {
   }
 
   it("fails when the prop value is not a SVG compatible length", () => {
-    assertFails(SVGLength().isRequired, <div a="foo" />, "a");
-    assertFails(SVGLength().isRequired, <div a={{}} />, "a");
-    assertFails(SVGLength().isRequired, <div a={[]} />, "a");
-    assertFails(SVGLength().isRequired, <div a />, "a");
+    assertFails(SVGLength.isRequired, <div a="foo" />, "a");
+    assertFails(SVGLength.isRequired, <div a={{}} />, "a");
+    assertFails(SVGLength.isRequired, <div a={[]} />, "a");
+    assertFails(SVGLength.isRequired, <div a />, "a");
   });
 
   it("passes when the prop value is a SVG compatible length", () => {
-    assertPasses(SVGLength(), <div a={100} />, "a");
-    assertPasses(SVGLength(), <div a="100" />, "a");
-    assertPasses(SVGLength(), <div a="100px" />, "a");
-    assertPasses(SVGLength(), <div a="100ex" />, "a");
-    assertPasses(SVGLength(), <div a="100px" />, "a");
-    assertPasses(SVGLength(), <div a="100in" />, "a");
-    assertPasses(SVGLength(), <div a="100cm" />, "a");
-    assertPasses(SVGLength(), <div a="100mm" />, "a");
-    assertPasses(SVGLength(), <div a="100pt" />, "a");
-    assertPasses(SVGLength(), <div a="100pc" />, "a");
-    assertPasses(SVGLength(), <div a="100pc" />, "a");
-    assertPasses(SVGLength(), <div a="100%" />, "a");
+    assertPasses(SVGLength, <div a={100} />, "a");
+    assertPasses(SVGLength, <div a="100" />, "a");
+    assertPasses(SVGLength, <div a="100px" />, "a");
+    assertPasses(SVGLength, <div a="100ex" />, "a");
+    assertPasses(SVGLength, <div a="100px" />, "a");
+    assertPasses(SVGLength, <div a="100in" />, "a");
+    assertPasses(SVGLength, <div a="100cm" />, "a");
+    assertPasses(SVGLength, <div a="100mm" />, "a");
+    assertPasses(SVGLength, <div a="100pt" />, "a");
+    assertPasses(SVGLength, <div a="100pc" />, "a");
+    assertPasses(SVGLength, <div a="100pc" />, "a");
+    assertPasses(SVGLength, <div a="100%" />, "a");
   });
 });

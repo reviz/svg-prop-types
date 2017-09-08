@@ -10,7 +10,7 @@ function wrapValidator(validator, typeName, typeChecker = null) {
   });
 }
 
-function requiredSVGLength(props, propName, componentName) {
+function SVGLength(props, propName, componentName) {
   const value = props[propName];
 
   if (typeof value === "number") {
@@ -24,16 +24,16 @@ function requiredSVGLength(props, propName, componentName) {
   return null;
 }
 
-const validator = function SVGLength(props, propName, ...rest) {
+SVGLength.isRequired = function SVGLengthRequired(props, propName, componentName) {
   const value = props[propName];
 
   if (value == null) {
-    return null;
+    return new TypeError(
+      `${propName} in ${componentName} is marked as required but its value is \`${value}\`.`
+    );
   }
 
-  return requiredSVGLength(props, propName, ...rest);
+  return SVGLength(props, propName, componentName);
 };
 
-validator.isRequired = requiredSVGLength;
-
-export default () => wrapValidator(validator, "SVGLength");
+export default wrapValidator(SVGLength, "SVGLength");
