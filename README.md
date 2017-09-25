@@ -58,5 +58,5 @@ Build pipeline is borrowed from https://github.com/airbnb/prop-types
 Simply clone the repo, npm install, and run npm test
 
 [package-url]: https://npmjs.org/package/svg-prop-types
-[travis-svg]: https://travis-ci.org/larriereguichet/svg-prop-types.svg
-[travis-url]: https://travis-ci.org/larriereguichet/svg-prop-types
+[travis-svg]: https://travis-ci.org/reviz/svg-prop-types.svg
+[travis-url]: https://travis-ci.org/reviz/svg-prop-types
