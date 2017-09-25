@@ -1,6 +1,6 @@
 {
   "name": "svg-prop-types",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Custom SVG prop types for React.",
   "main": "index.js",
   "scripts": {
