@@ -1,6 +1,6 @@
 {
   "name": "svg-prop-types",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Custom SVG prop types for React.",
   "main": "index.js",
   "scripts": {
@@ -47,6 +47,7 @@
   },
   "homepage": "https://github.com/reviz/svg-prop-types#readme",
   "dependencies": {
+    "object.assign": "^4.0.4",
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
